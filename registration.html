@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Registration here
+	</title>
+	<style>
+    input
+    {
+        width: 300px;
+        height: 33px;
+        margin-bottom: 1px solid #fff;
+    }
+</style>
+</head>
+<body style="background:url(be.jpg);">
+    <br>
+    <center>
+        <table style="color: white; width: 80%;background:url(green.jpg);border-radius: 120px 0px 120px 0px;font-size: 34px">
+    <th>Registration here</th>
+</table>
+<hr>
+    <br>
+	<table>
+        <form action="addregister.php" method="post">
+	<input type="text" name="firstname" placeholder="Enter the first name" required><br></br>
+    <input type="text" name="surname" placeholder="Enter the Last name" required><br></br>
+    <input type="password" name="Password" placeholder="Enter the Password" required><br></br>
+    <input type="email" name="Email" placeholder="Enter the Email" required><br></br>
+    <input type="text" name="Occupation" placeholder="Enter the Occupation" required><br></br>
+    <select name="gender" style="width: 300px; height: 33px">
+        <option >Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="other">Other</option>
+    </select><br><br>
+    <input type="date" name="dob" placeholder="Enter the date of birth" required><br></br>
+    <input type="submit" value="submit" name="submit" style="background-color: green; color:white;font-size: 24px"><br><br>
+    <button style="background-color: lightblue;font-size: 24px"><a href="Login.html">Login student portal</a></button>
+</form>
+</table>
+<center>
+</body>
+</html>

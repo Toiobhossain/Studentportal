@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transparent drop-down navbar</title>
+	<style>
+	body{
+		background-image: url('be.jpg');
+        background-size: cover;
+        font-family: Verdana;
+        font-size: 16px;
+        margin:0;
+        line-height: 24px;
+	}
+	.navbar{
+		text-align: center;
+		width:100%;
+		background: blue;
+		opacity: 0.6;
+
+	} 
+
+	.navbar ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: relative;
+
+	}
+	.navbar ul li a{
+		display:block;
+		padding: 25px;
+		color: white;
+		text-decoration: none;
+		width:150px;
+	}
+	.navbar ul:after{
+		content:"";clear: both;
+		display:block;
+	}
+	.navbar ul li{
+     float: left;
+     listy-style: none;
+	}
+	.navbar ul ul{
+		display:none;
+	}
+	.navbar ul li:hover > ul{
+      display: block;
+
+	}
+ .navbar ul li:hover {
+
+   background:red;
+   transition: 0.9s;
+  }
+  .navbar ul li:hover a{
+	color:white;
+  }
+  .navbar ul ul{
+	background:black;
+	padding:0;
+	margin:0;
+	position: absolute; top:100%;
+  }
+  .navbar ul ul li{
+  float:none;
+  position:relative;
+
+  }
+  .navbar ul ul li a{
+
+  	padding: 25px;
+  	color:white;
+  	width:300px;
+  	text-align: left
+  }
+  .navbar ul ul li a:hover{
+   background: lightblue;
+   color:black;
+   transition: 0.9s;
+  }
+
+
+
+
+
+
+   </style>
+</head>
+<body>
+<div class="navbar">
+<ul>
+	<li><a href="#"> Home</a></li>
+	<li><a href="#">Student</a>
+	<ul>
+	<li><a href="subsinfo.html"> Add student information</a></li>
+	<li><a href="showstudentinfo.php">Show student information</a></li>
+	<li><a href="Showresult.php">Show Result</a></li>	
+	</ul>
+
+	<li><a href="#"> Teacher</a>
+	<ul>
+	<li><a href="studentresult.html">Add student result</a></li>
+	<li><a href="showupdate.php"> Edit Result</a></li>
+	<li><a href="#"> Update Result</a></li>
+	<li><a href="showdelete.php"> Delete result</a></li>	
+	</ul>
+</li>
+	<li><a href="#">Guardian</a>
+		<ul>
+		<li><a href="#">Guardian information</a></li>
+	</ul>
+	</li>
+	<li><a href="https://www.google.com/maps/place/Daffodil+International+University/@23.7548853,90.3742164,17z/data=!3m1!4b1!4m5!3m4!1s0x3755b8ace928ae15:0xaa8023ec98f14cf5!8m2!3d23.7548804!4d90.3764051">Location</a></li>
+	<li><a href="index.html">Logout</li>
+</ul>
+	
+</div>
+<br>
+<br>
+<br>
+<center>
+<table>
+	<img src="ju.jpg" alt="Diu image" width="700" height="400" style="border-radius:0px 200px 0px 200px">
+	</table>
+</center>
+<br>
+<br>
+<hr>
+	<div align="center">
+	<h5><i style="color: white;">Developed by Tushar Ahmed</i></h5>
+</div>
+</body>
+</html>
